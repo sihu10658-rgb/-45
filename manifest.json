@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "간단 광고 차단기",
+  "version": "1.0",
+  "description": "특정 광고 영역을 숨기는 확장 프로그램입니다.",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
