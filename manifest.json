@@ -1,15 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "간단 광고 차단기",
+  "name": "내 손으로 만드는 광고 차단기",
   "version": "1.0",
-  "description": "특정 광고 영역을 숨기는 확장 프로그램입니다.",
+  "description": "유튜브를 제외한 웹페이지의 광고를 차단하는 확장 프로그램입니다.",
   "permissions": [
-    "declarativeNetRequest",
-    "declarativeNetRequestFeedback"
+    "declarativeNetRequest"
   ],
   "host_permissions": [
     "<all_urls>"
   ],
+  "action": {
+    "default_icon": "icon.png"
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
